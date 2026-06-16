@@ -1,0 +1,37 @@
+#if __has_include("p31n-local-macros.dtsi")
+#include "p31n-local-macros.dtsi"
+#else
+macros {
+    m1: m1 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp P &kp L &kp A &kp C &kp E &kp H &kp O &kp L &kp D &kp E &kp R &kp N1>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
+
+    m2: m2 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp P &kp L &kp A &kp C &kp E &kp H &kp O &kp L &kp D &kp E &kp R &kp N2>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
+
+    m3: m3 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp P &kp L &kp A &kp C &kp E &kp H &kp O &kp L &kp D &kp E &kp R &kp N3>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
+
+    m4: m4 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp P &kp L &kp A &kp C &kp E &kp H &kp O &kp L &kp D &kp E &kp R &kp N4>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
+};
+#endif
