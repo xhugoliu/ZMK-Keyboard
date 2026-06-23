@@ -171,7 +171,7 @@
 
         default_layer {
             bindings = <
-            &kp Q        &kp W         &kp E          &kp R          &kp T             &kp Y          &kp U          &kp I           &kp O         &kp P
+            &kp Q        &mt LGUI W    &mt LSHFT E    &mt LCTRL R    &mt LALT T        &mt LALT Y     &mt LCTRL U    &mt LSHFT I     &mt LGUI O    &kp P
             &kp A        &mt LGUI S    &mt LSHFT D    &mt LCTRL F    &mt LALT G        &mt LALT H     &mt LCTRL J    &mt LSHFT K     &mt LGUI L    &kp SEMI
             &lt 2 Z      &lt 1 X       &lt 5 C        &lt 1 V        &lt 2 B    &mo 8   &lt 3 N       &lt 4 M       &lt 5 COMMA     &lt 4 DOT    &lt 3 SLASH
             >;
@@ -179,7 +179,7 @@
 
         fn1_layer {
             bindings = <
-            &none        &none         &none          &none          &none             &kp KP_PLUS    &kp N7         &kp N8          &kp N9        &kp KP_ASTERISK
+            &none        &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &kp KP_PLUS    &kp N7         &kp N8          &kp N9        &kp KP_ASTERISK
             &none        &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &kp KP_MINUS   &kp N4         &kp N5          &kp N6        &kp KP_SLASH
             &none        &none         &none          &none          &none     &mo 8   &kp N0        &kp N1         &kp N2          &kp N3        &kp KP_DOT
             >;
@@ -195,7 +195,7 @@
 
         fn3_layer {
             bindings = <
-            &kp HOME     &none         &kp UP         &none          &kp PG_UP         &none          &none          &none           &none         &none
+            &kp HOME     &none         &kp UP         &none          &kp PG_UP         &kp LALT       &kp LCTRL      &kp LSHFT       &kp LGUI      &none
             &none        &kp LEFT      &none          &kp RIGHT      &none             &kp LALT       &kp LCTRL      &kp LSHFT       &kp LGUI      &none
             &kp END      &none         &kp DOWN       &none          &kp PG_DN &mo 8   &none          &none          &none           &none         &none
             >;
