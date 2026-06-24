@@ -25,97 +25,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <1 11>;
-            bindings = <&kp ESC>;
-            layers = <0>;
-        };
-
-        combo_space {
-            timeout-ms = <50>;
-            key-positions = <2 12>;
-            bindings = <&kp SPACE>;
-            layers = <0>;
-        };
-
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <3 13>;
-            bindings = <&kp TAB>;
-            layers = <0>;
-        };
-
-        combo_bspc {
-            timeout-ms = <50>;
-            key-positions = <6 16>;
-            bindings = <&kp BSPC>;
-            layers = <0>;
-        };
-
-        combo_enter {
-            timeout-ms = <50>;
-            key-positions = <7 17>;
-            bindings = <&kp ENTER>;
-            layers = <0>;
-        };
-
-        combo_del {
-            timeout-ms = <50>;
-            key-positions = <8 18>;
-            bindings = <&kp DEL>;
-            layers = <0>;
-        };
-
-        combo_grave {
-            timeout-ms = <50>;
-            key-positions = <11 21>;
-            bindings = <&kp GRAVE>;
-            layers = <0>;
-        };
-
-        combo_minus {
-            timeout-ms = <50>;
-            key-positions = <12 22>;
-            bindings = <&kp MINUS>;
-            layers = <0>;
-        };
-
-        combo_equal {
-            timeout-ms = <50>;
-            key-positions = <13 23>;
-            bindings = <&kp EQUAL>;
-            layers = <0>;
-        };
-
-        combo_sqt {
-            timeout-ms = <50>;
-            key-positions = <15 26>;
-            bindings = <&kp SQT>;
-            layers = <0>;
-        };
-
-        combo_lbkt {
-            timeout-ms = <50>;
-            key-positions = <16 27>;
-            bindings = <&kp LBKT>;
-            layers = <0>;
-        };
-
-        combo_rbkt {
-            timeout-ms = <50>;
-            key-positions = <17 28>;
-            bindings = <&kp RBKT>;
-            layers = <0>;
-        };
-
-        combo_bslh {
-            timeout-ms = <50>;
-            key-positions = <18 29>;
-            bindings = <&kp BSLH>;
-            layers = <0>;
-        };
-
         combo_lg_space {
             timeout-ms = <50>;
             key-positions = <11 18>;
@@ -146,7 +55,7 @@
             bindings = <
             &kp Q        &mt LGUI W    &mt LSHFT E    &mt LCTRL R    &mt LALT T        &mt LALT Y     &mt LCTRL U    &mt LSHFT I     &mt LGUI O    &kp P
             &kp A        &kp S         &kp D          &kp F          &kp G             &kp H          &kp J         &kp K          &kp L        &kp SEMI
-            &lt 2 Z      &lt 1 X       &kp C         &lt 1 V        &lt 2 B    &mo 8   &lt 3 N       &lt 4 M       &kp COMMA       &lt 4 DOT    &lt 3 SLASH
+            &lt 2 Z      &lt 1 X       &lt 5 C        &lt 1 V        &lt 2 B    &mo 8   &lt 3 N       &lt 4 M       &lt 6 COMMA     &lt 4 DOT    &lt 3 SLASH
             >;
         };
 
@@ -184,16 +93,16 @@
 
         fn5_layer {
             bindings = <
-            &none &none &none &none &none &none &none &none &none &none
-            &none &none &none &none &none &none &none &none &none &none
+            &none &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &none &kp BSPC &kp ENTER &kp DEL &none
+            &none &none    &none     &none     &none    &kp SQT &kp LBKT &kp RBKT &kp BSLH &none
             &none &none &none &none &none &mo 8 &none &none &none &none &none
             >;
         };
 
         fn6_layer {
             bindings = <
-            &none &none &none &none &none &none &none &none &none &none
-            &none &none &none &none &none &none &none &none &none &none
+            &none &kp ESC   &kp SPACE &kp TAB   &none &kp LALT &kp LCTRL &kp LSHFT &kp LGUI &none
+            &none &kp GRAVE &kp MINUS &kp EQUAL &none &none    &none     &none     &none    &none
             &none &none &none &none &none &mo 8 &none &none &none &none &none
             >;
         };
