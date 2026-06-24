@@ -145,7 +145,7 @@
         default_layer {
             bindings = <
             &kp Q        &mt LGUI W    &mt LSHFT E    &mt LCTRL R    &mt LALT T        &mt LALT Y     &mt LCTRL U    &mt LSHFT I     &mt LGUI O    &kp P
-            &kp A        &mt LGUI S    &mt LSHFT D    &mt LCTRL F    &mt LALT G        &mt LALT H     &mt LCTRL J    &mt LSHFT K     &mt LGUI L    &kp SEMI
+            &kp A        &kp S         &kp D          &kp F          &kp G             &kp H          &kp J         &kp K          &kp L        &kp SEMI
             &lt 2 Z      &lt 1 X       &kp C         &lt 1 V        &lt 2 B    &mo 8   &lt 3 N       &lt 4 M       &kp COMMA       &lt 4 DOT    &lt 3 SLASH
             >;
         };
@@ -153,31 +153,31 @@
         fn1_layer {
             bindings = <
             &none        &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &kp KP_PLUS    &kp N7         &kp N8          &kp N9        &kp KP_ASTERISK
-            &none        &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &kp KP_MINUS   &kp N4         &kp N5          &kp N6        &kp KP_SLASH
+            &none        &none         &none          &none          &none             &kp KP_MINUS   &kp N4         &kp N5          &kp N6        &kp KP_SLASH
             &none        &none         &none          &none          &none     &mo 8   &kp N0        &kp N1         &kp N2          &kp N3        &kp KP_DOT
             >;
         };
 
         fn2_layer {
             bindings = <
-            &mkp MB5     &mkp MB4      &mkp MCLK      &mkp RCLK      &mkp LCLK         &msc SCRL_UP   &none          &mmv MOVE_UP    &none         &msc SCRL_LEFT
-            &none        &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &none          &mmv MOVE_LEFT &none           &mmv MOVE_RIGHT &none
-            &none        &none         &none          &none          &none     &mo 8   &msc SCRL_DOWN &none          &mmv MOVE_DOWN  &none         &msc SCRL_RIGHT
+            &none        &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &msc SCRL_UP   &none          &mmv MOVE_UP    &none         &msc SCRL_LEFT
+            &mkp MB5     &mkp MB4      &mkp MCLK      &mkp RCLK      &mkp LCLK         &none          &mmv MOVE_LEFT &none           &mmv MOVE_RIGHT &none
+            &mkp MB5     &mkp MB4      &mkp MCLK      &mkp RCLK      &mkp LCLK &mo 8   &msc SCRL_DOWN &none          &mmv MOVE_DOWN  &none         &msc SCRL_RIGHT
             >;
         };
 
         fn3_layer {
             bindings = <
             &kp HOME     &none         &kp UP         &none          &kp PG_UP         &kp LALT       &kp LCTRL      &kp LSHFT       &kp LGUI      &none
-            &none        &kp LEFT      &none          &kp RIGHT      &none             &kp LALT       &kp LCTRL      &kp LSHFT       &kp LGUI      &none
+            &none        &kp LEFT      &none          &kp RIGHT      &none             &none          &none          &none           &none        &none
             &kp END      &none         &kp DOWN       &none          &kp PG_DN &mo 8   &none          &none          &none           &none         &none
             >;
         };
 
         fn4_layer {
             bindings = <
-            &kp F1       &kp F2        &kp F3         &kp F4         &kp F5            &kp F16        &kp F17        &kp F18         &kp F19       &kp F20
-            &kp F6       &kp F7        &kp F8         &kp F9         &kp F10           &kp LALT       &kp LCTRL      &kp LSHFT       &kp LGUI      &none
+            &kp F1       &kp F2        &kp F3         &kp F4         &kp F5            &kp LALT       &kp LCTRL      &kp LSHFT       &kp LGUI      &none
+            &kp F6       &kp F7        &kp F8         &kp F9         &kp F10           &kp F16        &kp F17        &kp F18         &kp F19       &kp F20
             &kp F11      &kp F12       &kp F13        &kp F14        &kp F15   &mo 8   &kp F21        &kp F22        &kp F23         &kp F24       &none
             >;
         };
