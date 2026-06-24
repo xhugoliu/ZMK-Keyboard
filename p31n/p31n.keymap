@@ -137,33 +137,6 @@
             layers = <0>;
         };
 
-        combo_m1 {
-            timeout-ms = <50>;
-            key-positions = <0 10 20>;
-            bindings = <&m1>;
-            layers = <0>;
-        };
-
-        combo_m2 {
-            timeout-ms = <50>;
-            key-positions = <1 11 21>;
-            bindings = <&m2>;
-            layers = <0>;
-        };
-
-        combo_m3 {
-            timeout-ms = <50>;
-            key-positions = <2 12 22>;
-            bindings = <&m3>;
-            layers = <0>;
-        };
-
-        combo_m4 {
-            timeout-ms = <50>;
-            key-positions = <3 13 23>;
-            bindings = <&m4>;
-            layers = <0>;
-        };
     };
 
     keymap0: keymap {
@@ -173,7 +146,7 @@
             bindings = <
             &kp Q        &mt LGUI W    &mt LSHFT E    &mt LCTRL R    &mt LALT T        &mt LALT Y     &mt LCTRL U    &mt LSHFT I     &mt LGUI O    &kp P
             &kp A        &mt LGUI S    &mt LSHFT D    &mt LCTRL F    &mt LALT G        &mt LALT H     &mt LCTRL J    &mt LSHFT K     &mt LGUI L    &kp SEMI
-            &lt 2 Z      &lt 1 X       &lt 5 C        &lt 1 V        &lt 2 B    &mo 8   &lt 3 N       &lt 4 M       &lt 5 COMMA     &lt 4 DOT    &lt 3 SLASH
+            &lt 2 Z      &lt 1 X       &kp C         &lt 1 V        &lt 2 B    &mo 8   &lt 3 N       &lt 4 M       &kp COMMA       &lt 4 DOT    &lt 3 SLASH
             >;
         };
 
@@ -211,9 +184,9 @@
 
         fn5_layer {
             bindings = <
-            &none        &kp C_REWIND  &kp C_PP       &kp C_FF       &none             &none          &none          &none           &none         &none
-            &none        &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP   &none             &none          &kp C_BRI_DN   &kp PSCRN       &kp C_BRI_UP  &none
-            &none        &none         &none          &none          &none     &mo 8   &none          &none          &none           &none         &none
+            &none &none &none &none &none &none &none &none &none &none
+            &none &none &none &none &none &none &none &none &none &none
+            &none &none &none &none &none &mo 8 &none &none &none &none &none
             >;
         };
 
@@ -235,9 +208,9 @@
 
         fn8_layer {
             bindings = <
-            &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &out OUT_BLE   &out OUT_USB   &bt BT_CLR    &bootloader   &none
-            &none          &none          &none          &none          &none             &none          &none          &none         &none         &none
-            &none          &none          &none          &none          &none     &to 0   &none          &none          &none         &none         &none
+            &m1            &m2            &m3            &m4            &m5               &none          &kp C_REWIND  &kp C_PP     &kp C_FF     &none
+            &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &none          &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  &none
+            &out OUT_BLE   &out OUT_USB   &bt BT_CLR     &bootloader    &none     &to 0   &none          &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP  &none
             >;
         };
     };

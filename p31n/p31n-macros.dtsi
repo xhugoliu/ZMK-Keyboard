@@ -33,5 +33,13 @@ macros {
         wait-ms = <1>;
         tap-ms = <1>;
     };
+
+    m5: m5 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp P &kp L &kp A &kp C &kp E &kp H &kp O &kp L &kp D &kp E &kp R &kp N5>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
 };
 #endif
