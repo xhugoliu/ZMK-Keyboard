@@ -55,7 +55,7 @@
             bindings = <
             &kp Q        &mt LGUI W    &mt LSHFT E    &mt LCTRL R    &mt LALT T        &mt LALT Y     &mt LCTRL U    &mt LSHFT I     &mt LGUI O    &kp P
             &kp A        &kp S         &kp D          &kp F          &kp G             &kp H          &kp J         &kp K          &kp L        &kp SEMI
-            &lt 2 Z      &lt 1 X       &lt 5 C        &lt 1 V        &lt 2 B    &mo 8   &lt 3 N       &lt 4 M       &lt 6 COMMA     &lt 4 DOT    &lt 3 SLASH
+            &lt 2 Z      &kp X       &lt 1 C        &lt 5 V        &lt 2 B    &mo 8   &lt 3 N       &lt 6 M       &lt 4 COMMA     &kp DOT    &lt 3 SLASH
             >;
         };
 
