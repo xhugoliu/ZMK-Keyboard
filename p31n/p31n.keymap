@@ -22,7 +22,6 @@
 / {
 #include "p31n-macros.dtsi"
 
-    /*
     combos {
         compatible = "zmk,combos";
 
@@ -48,7 +47,6 @@
         };
 
     };
-    */
 
     keymap0: keymap {
         compatible = "zmk,keymap";
