@@ -46,6 +46,41 @@
             layers = <0>;
         };
 
+        combo_gh {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+            bindings = <&m6>;
+            layers = <0>;
+        };
+
+        combo_ty {
+            timeout-ms = <50>;
+            key-positions = <4 5>;
+            bindings = <&m7>;
+            layers = <0>;
+        };
+
+        combo_ru {
+            timeout-ms = <50>;
+            key-positions = <3 6>;
+            bindings = <&m8>;
+            layers = <0>;
+        };
+
+        combo_ei {
+            timeout-ms = <50>;
+            key-positions = <2 7>;
+            bindings = <&m9>;
+            layers = <0>;
+        };
+
+        combo_wo {
+            timeout-ms = <50>;
+            key-positions = <1 8>;
+            bindings = <&m10>;
+            layers = <0>;
+        };
+
     };
 
     keymap0: keymap {

@@ -41,5 +41,45 @@ macros {
         wait-ms = <1>;
         tap-ms = <1>;
     };
+
+    m6: m6 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LS(N9) &kp LS(N0) &kp LEFT>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
+
+    m7: m7 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LG(SPACE) &kp LG(N1)>;
+        wait-ms = <100>;
+        tap-ms = <40>;
+    };
+
+    m8: m8 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LG(SPACE) &kp LG(N2)>;
+        wait-ms = <100>;
+        tap-ms = <40>;
+    };
+
+    m9: m9 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LG(SPACE) &kp LG(N3)>;
+        wait-ms = <100>;
+        tap-ms = <40>;
+    };
+
+    m10: m10 {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LG(SPACE) &kp LG(N4)>;
+        wait-ms = <100>;
+        tap-ms = <40>;
+    };
 };
 #endif
