@@ -39,10 +39,10 @@
             layers = <0>;
         };
 
-        combo_f20 {
+        combo_fj {
             timeout-ms = <50>;
             key-positions = <13 16>;
-            bindings = <&kp F20>;
+            bindings = <&kp LG(SEMI)>;
             layers = <0>;
         };
 
