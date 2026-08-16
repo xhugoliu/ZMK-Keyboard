@@ -25,58 +25,37 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_lg_space {
+        combo_wo {
             timeout-ms = <50>;
-            key-positions = <11 18>;
+            key-positions = <1 8>;
             bindings = <&kp LG(SPACE)>;
-            layers = <0>;
-        };
-
-        combo_lc_space {
-            timeout-ms = <50>;
-            key-positions = <12 17>;
-            bindings = <&kp LC(SPACE)>;
-            layers = <0>;
-        };
-
-        combo_fj {
-            timeout-ms = <50>;
-            key-positions = <13 16>;
-            bindings = <&kp LG(SEMI)>;
-            layers = <0>;
-        };
-
-        combo_gh {
-            timeout-ms = <50>;
-            key-positions = <14 15>;
-            bindings = <&m6>;
-            layers = <0>;
-        };
-
-        combo_ty {
-            timeout-ms = <50>;
-            key-positions = <4 5>;
-            bindings = <&m7>;
-            layers = <0>;
-        };
-
-        combo_ru {
-            timeout-ms = <50>;
-            key-positions = <3 6>;
-            bindings = <&m8>;
             layers = <0>;
         };
 
         combo_ei {
             timeout-ms = <50>;
             key-positions = <2 7>;
-            bindings = <&m9>;
+            bindings = <&kp LC(SPACE)>;
             layers = <0>;
         };
 
-        combo_wo {
+        combo_ru {
             timeout-ms = <50>;
-            key-positions = <1 8>;
+            key-positions = <3 6>;
+            bindings = <&kp LG(SEMI)>;
+            layers = <0>;
+        };
+
+        combo_ty {
+            timeout-ms = <50>;
+            key-positions = <4 5>;
+            bindings = <&m6>;
+            layers = <0>;
+        };
+
+        combo_qp {
+            timeout-ms = <50>;
+            key-positions = <0 9>;
             bindings = <&m10>;
             layers = <0>;
         };
