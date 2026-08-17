@@ -67,7 +67,7 @@
 
         default_layer {
             bindings = <
-            &kp Q        &mt LGUI W    &mt LSHFT E    &mt LCTRL R    &mt LALT T        &mt LALT Y     &mt LCTRL U    &mt LSHFT I     &mt LGUI O    &kp P
+            &mt LALT Q   &mt LGUI W    &mt LSHFT E    &mt LCTRL R    &mt LALT T        &mt RALT Y     &mt RCTRL U    &mt RSHFT I     &mt RGUI O    &mt RALT P
             &kp A        &kp S         &kp D          &kp F          &kp G             &kp H          &kp J         &kp K          &kp L        &kp SEMI
             &lt 2 Z      &lt 7 X       &lt 1 C        &lt 5 V        &lt 2 B    &mo 8   &lt 3 N       &lt 6 M       &lt 4 COMMA     &lt 7 DOT    &lt 3 SLASH
             >;
@@ -75,7 +75,7 @@
 
         fn1_layer {
             bindings = <
-            &none        &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &kp KP_PLUS    &kp N7         &kp N8          &kp N9        &kp KP_ASTERISK
+            &kp LALT     &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &kp KP_PLUS    &kp N7         &kp N8          &kp N9        &kp KP_ASTERISK
             &none        &none         &none          &none          &none             &kp KP_MINUS   &kp N4         &kp N5          &kp N6        &kp KP_SLASH
             &none        &none         &none          &none          &none     &none   &kp N0        &kp N1         &kp N2          &kp N3        &kp KP_DOT
             >;
@@ -83,7 +83,7 @@
 
         fn2_layer {
             bindings = <
-            &none        &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &msc SCRL_UP   &none          &mmv MOVE_UP    &none         &msc SCRL_LEFT
+            &kp LALT     &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &msc SCRL_UP   &none          &mmv MOVE_UP    &none         &msc SCRL_LEFT
             &mkp MB5     &mkp MB4      &mkp MCLK      &mkp RCLK      &mkp LCLK         &none          &mmv MOVE_LEFT &none           &mmv MOVE_RIGHT &none
             &mkp MB5     &mkp MB4      &mkp MCLK      &mkp RCLK      &mkp LCLK &none   &msc SCRL_DOWN &none          &mmv MOVE_DOWN  &none         &msc SCRL_RIGHT
             >;
@@ -91,7 +91,7 @@
 
         fn3_layer {
             bindings = <
-            &kp HOME     &none         &kp UP         &none          &kp PG_UP         &kp LALT       &kp LCTRL      &kp LSHFT       &kp LGUI      &none
+            &kp HOME     &none         &kp UP         &none          &kp PG_UP         &kp RALT       &kp RCTRL      &kp RSHFT       &kp RGUI      &kp RALT
             &none        &kp LEFT      &none          &kp RIGHT      &none             &none          &none          &none           &none        &none
             &kp END      &none         &kp DOWN       &none          &kp PG_DN &none   &none          &none          &none           &none         &none
             >;
@@ -99,7 +99,7 @@
 
         fn4_layer {
             bindings = <
-            &kp F1       &kp F2        &kp F3         &kp F4         &kp F5            &kp LALT       &kp LCTRL      &kp LSHFT       &kp LGUI      &none
+            &kp F1       &kp F2        &kp F3         &kp F4         &kp F5            &kp RALT       &kp RCTRL      &kp RSHFT       &kp RGUI      &kp RALT
             &kp F6       &kp F7        &kp F8         &kp F9         &kp F10           &kp F16        &kp F17        &kp F18         &kp F19       &kp F20
             &kp F11      &kp F12       &kp F13        &kp F14        &kp F15   &none   &kp F21        &kp F22        &kp F23         &kp F24       &none
             >;
@@ -107,7 +107,7 @@
 
         fn5_layer {
             bindings = <
-            &none &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &none &kp BSPC &kp ENTER &kp DEL &none
+            &kp LALT &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &none &kp BSPC &kp ENTER &kp DEL &none
             &none &none    &none     &none     &none    &kp SQT &kp LBKT &kp RBKT &kp BSLH &none
             &none &none &none &none &none &none &none &none &none &none &none
             >;
@@ -115,7 +115,7 @@
 
         fn6_layer {
             bindings = <
-            &none &kp ESC   &kp SPACE &kp TAB   &none &kp LALT &kp LCTRL &kp LSHFT &kp LGUI &none
+            &none &kp ESC   &kp SPACE &kp TAB   &none &kp RALT &kp RCTRL &kp RSHFT &kp RGUI &kp RALT
             &none &kp GRAVE &kp MINUS &kp EQUAL &none &none    &none     &none     &none    &none
             &none &none &none &none &none &none &none &none &none &none &none
             >;
