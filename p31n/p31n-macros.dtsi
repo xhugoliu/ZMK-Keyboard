@@ -81,5 +81,45 @@ macros {
         wait-ms = <100>;
         tap-ms = <40>;
     };
+
+    screenshot_full: screenshot_full {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LS(LG(N3))>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
+
+    screenshot_region: screenshot_region {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LS(LG(N4))>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
+
+    screenshot_window: screenshot_window {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LS(LG(N4)) &kp SPACE>;
+        wait-ms = <100>;
+        tap-ms = <40>;
+    };
+
+    screenshot_toolbar: screenshot_toolbar {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LS(LG(N5))>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
+
+    screenshot_touchbar: screenshot_touchbar {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LS(LG(N6))>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
 };
 #endif

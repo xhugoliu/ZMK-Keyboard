@@ -67,6 +67,42 @@
             layers = <0>;
         };
 
+        // macOS screenshots: hold each listed pair together to trigger.
+        combo_gh_screenshot {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+            bindings = <&screenshot_full>;
+            layers = <0>;
+        };
+
+        combo_fj_screenshot {
+            timeout-ms = <50>;
+            key-positions = <13 16>;
+            bindings = <&screenshot_region>;
+            layers = <0>;
+        };
+
+        combo_dk_screenshot {
+            timeout-ms = <50>;
+            key-positions = <12 17>;
+            bindings = <&screenshot_window>;
+            layers = <0>;
+        };
+
+        combo_sl_screenshot {
+            timeout-ms = <50>;
+            key-positions = <11 18>;
+            bindings = <&screenshot_toolbar>;
+            layers = <0>;
+        };
+
+        combo_a_semicolon_screenshot {
+            timeout-ms = <50>;
+            key-positions = <10 19>;
+            bindings = <&screenshot_touchbar>;
+            layers = <0>;
+        };
+
     };
 
     keymap0: keymap {
