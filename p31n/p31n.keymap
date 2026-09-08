@@ -42,14 +42,14 @@
         combo_ru {
             timeout-ms = <50>;
             key-positions = <3 6>;
-            bindings = <&quote_pair>;
+            bindings = <&kp LG(SEMI)>;
             layers = <0>;
         };
 
         combo_vm {
             timeout-ms = <50>;
             key-positions = <23 27>;
-            bindings = <&kp LG(SEMI)>;
+            bindings = <&kp TAB>;
             layers = <0>;
         };
 
