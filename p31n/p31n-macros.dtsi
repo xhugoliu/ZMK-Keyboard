@@ -50,6 +50,15 @@ macros {
         tap-ms = <1>;
     };
 
+    // macOS U.S./ABC layout: type “”, then move the cursor between them.
+    quote_pair: quote_pair {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp LA(LBKT) &kp LS(LA(LBKT)) &kp LEFT>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+    };
+
     m7: m7 {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
