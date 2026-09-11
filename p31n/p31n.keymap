@@ -60,6 +60,13 @@
             layers = <0>;
         };
 
+        combo_bn {
+            timeout-ms = <50>;
+            key-positions = <24 26>;
+            bindings = <&kp SPACE>;
+            layers = <0>;
+        };
+
         // macOS screenshots: hold each listed pair together to trigger.
         combo_gh_screenshot {
             timeout-ms = <50>;
@@ -145,7 +152,7 @@
             bindings = <
             &kp LALT &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &none &kp BSPC &kp ENTER &kp DEL &none
             &none &none    &none     &none     &none    &none    &kp LBKT &kp RBKT &kp BSLH &none
-            &none &none &none &none &none &none &kp SPC &kp BSPC &kp ENTER &kp DEL &none
+            &none &none &none &none &none &none &none &kp BSPC &kp ENTER &kp DEL &none
             >;
         };
 
@@ -153,7 +160,7 @@
             bindings = <
             &none &kp ESC   &kp GRAVE &kp TAB   &none &kp RALT &kp RCTRL &kp RSHFT &kp RGUI &kp RALT
             &none &kp SQT   &kp MINUS &kp EQUAL &none &none    &none     &none     &none    &none
-            &none &kp ESC   &kp GRAVE &kp TAB   &kp SPC &none &none &none &none &none &none
+            &none &kp ESC   &kp GRAVE &kp TAB   &none &none &none &none &none &none &none
             >;
         };
 
