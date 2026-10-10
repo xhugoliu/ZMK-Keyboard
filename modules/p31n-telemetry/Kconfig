@@ -1,0 +1,4 @@
+config P31N_TELEMETRY
+    bool "P31n physical key BLE telemetry"
+    depends on ZMK_BLE && !ZMK_SPLIT
+    default n

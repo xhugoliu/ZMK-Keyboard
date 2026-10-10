@@ -49,7 +49,7 @@ echo "开始编译: $SHIELD_NAME"
 echo "=========================================="
 
 cd /workspaces/zmk/app
-west build -d "$BUILD_DIR" -b nrfmicro/nrf52840/zmk -S studio-rpc-usb-uart -- -DSHIELD=$SHIELD_NAME -DCONFIG_ZMK_STUDIO=y
+west build -d "$BUILD_DIR" -b nrfmicro/nrf52840/zmk -S studio-rpc-usb-uart -- -DSHIELD=$SHIELD_NAME -DCONFIG_ZMK_STUDIO=y -DZMK_EXTRA_MODULES=/workspaces/ZMK-Studio/modules/p31n-telemetry
 
 if [ $? -ne 0 ]; then
     echo ""

@@ -1,0 +1,35 @@
+{
+  "board": "nrfmicro/nrf52840/zmk",
+  "shield": "p31n",
+  "built_on": "2026-10-10",
+  "zmk_commit": "904c9aec8822d79149d42c8a9a77e8828eb08f5a",
+  "sdk": "0.16.9",
+  "protocol_version": 1,
+  "public_build": true,
+  "private_local_macros_included": false,
+  "uf2_bytes": 482304,
+  "uf2_sha256": "2a029596008ab97652f046147f8d86a6e3ba898ee20e6fe94c67a6db05c96447",
+  "source_sha256": {
+    "p31n/p31n.keymap": "dfe859209d8eb0d359dd8eb3760e770663e76ea33395163cbf26113f3bbd2526",
+    "p31n/p31n.conf": "9ad06ac5208ef390ead67883607e638b5ae35c8139226087ed6c54b40bb9ed2f",
+    "p31n/p31n-layouts.dtsi": "e2c892adb4f2934581ec4f9e84225e438c2d15e5f7f310674a168fb5589bb920",
+    "p31n/p31n-macros.dtsi": "89d5e245f7dc15fedec392a673498ffe570d5bd2758b5d8d83aa7d6499f1a618",
+    "modules/p31n-telemetry/telemetry.c": "fac77abe86c0a3cd55e01c35a332dbc0b09ee80b4cc60a27ab3356540b1372df",
+    "modules/p31n-telemetry/replay_filter.h": "860186b88246fb6b3cde7600e4009aacc7867ec1ec1bd02f7085335cd149e6db"
+  },
+  "listener_order": {
+    "pi_probe": [
+      0,
+      1
+    ],
+    "behavior_hold_tap": [
+      4,
+      5
+    ],
+    "combo": [
+      9,
+      10
+    ]
+  },
+  "flash_attempted_for_this_build": false
+}

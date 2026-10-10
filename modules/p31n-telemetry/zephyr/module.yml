@@ -1,0 +1,4 @@
+name: zmk-feature-p31n-telemetry
+build:
+  cmake: .
+  kconfig: Kconfig

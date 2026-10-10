@@ -1,4 +1,4 @@
-#if __has_include("p31n-local-macros.dtsi")
+#if !defined(P31N_PUBLIC_BUILD) && __has_include("p31n-local-macros.dtsi")
 #include "p31n-local-macros.dtsi"
 #else
 macros {

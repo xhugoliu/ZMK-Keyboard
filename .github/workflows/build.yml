@@ -43,7 +43,9 @@ jobs:
         run: |
           west build -s zmk/app -b ${{ github.event.inputs.board }} -d build \
             -S studio-rpc-usb-uart \
-            -- -DSHIELD=${{ github.event.inputs.shield }} -DCONFIG_ZMK_STUDIO=y
+            -- -DSHIELD=${{ github.event.inputs.shield }} -DCONFIG_ZMK_STUDIO=y \
+            -DZMK_EXTRA_MODULES=$GITHUB_WORKSPACE/modules/p31n-telemetry \
+            -DDTS_EXTRA_CPPFLAGS=-DP31N_PUBLIC_BUILD=1
 
       - name: Set safe name
         run: |
