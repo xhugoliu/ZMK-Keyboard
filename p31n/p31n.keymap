@@ -110,6 +110,8 @@
     keymap0: keymap {
         compatible = "zmk,keymap";
 
+        // Central key locks/unlocks layers 1-7 after momentary entry.
+        // The default layer retains the momentary system-layer shortcut.
         default_layer {
             bindings = <
             &mt LALT Q   &mt LGUI W    &mt LSHFT E    &mt LCTRL R    &mt LALT T        &mt RALT Y     &mt RCTRL U    &mt RSHFT I     &mt RGUI O    &mt RALT P
@@ -122,7 +124,7 @@
             bindings = <
             &kp LALT     &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &kp KP_PLUS    &kp N7         &kp N8          &kp N9        &kp KP_ASTERISK
             &none        &none         &none          &none          &none             &kp KP_MINUS   &kp N4         &kp N5          &kp N6        &kp KP_SLASH
-            &none        &none         &none          &none          &none     &none   &kp N0        &kp N1         &kp N2          &kp N3        &kp KP_DOT
+            &none        &none         &none          &none          &none     &tog 1  &kp N0        &kp N1         &kp N2          &kp N3        &kp KP_DOT
             >;
         };
 
@@ -130,7 +132,7 @@
             bindings = <
             &kp LALT     &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &msc SCRL_UP   &none          &mmv MOVE_UP    &none         &msc SCRL_LEFT
             &mkp MB5     &mkp MB4      &mkp MCLK      &mkp RCLK      &mkp LCLK         &none          &mmv MOVE_LEFT &none           &mmv MOVE_RIGHT &none
-            &mkp MB5     &mkp MB4      &mkp MCLK      &mkp RCLK      &mkp LCLK &none   &msc SCRL_DOWN &none          &mmv MOVE_DOWN  &none         &msc SCRL_RIGHT
+            &mkp MB5     &mkp MB4      &mkp MCLK      &mkp RCLK      &mkp LCLK &tog 2  &msc SCRL_DOWN &none          &mmv MOVE_DOWN  &none         &msc SCRL_RIGHT
             >;
         };
 
@@ -138,7 +140,7 @@
             bindings = <
             &kp HOME     &none         &kp UP         &none          &kp PG_UP         &kp RALT       &kp RCTRL      &kp RSHFT       &kp RGUI      &kp RALT
             &none        &kp LEFT      &none          &kp RIGHT      &none             &none          &none          &none           &none        &none
-            &kp END      &none         &kp DOWN       &none          &kp PG_DN &none   &none          &none          &none           &none         &none
+            &kp END      &none         &kp DOWN       &none          &kp PG_DN &tog 3  &none          &none          &none           &none         &none
             >;
         };
 
@@ -146,7 +148,7 @@
             bindings = <
             &kp F1       &kp F2        &kp F3         &kp F4         &kp F5            &kp RALT       &kp RCTRL      &kp RSHFT       &kp RGUI      &kp RALT
             &kp F6       &kp F7        &kp F8         &kp F9         &kp F10           &kp F16        &kp F17        &kp F18         &kp F19       &kp F20
-            &kp F11      &kp F12       &kp F13        &kp F14        &kp F15   &none   &kp F21        &kp F22        &none          &kp F23       &kp F24
+            &kp F11      &kp F12       &kp F13        &kp F14        &kp F15   &tog 4  &kp F21        &kp F22        &none          &kp F23       &kp F24
             >;
         };
 
@@ -154,7 +156,7 @@
             bindings = <
             &kp LALT &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &none &kp BSPC &kp ENTER &kp DEL &none
             &none &none    &none     &none     &none    &none    &kp LBKT &kp RBKT &kp BSLH &none
-            &none &none &none &none &none &none &none &kp BSPC &kp ENTER &kp DEL &none
+            &none &none &none &none &none &tog 5 &none &kp BSPC &kp ENTER &kp DEL &none
             >;
         };
 
@@ -162,7 +164,7 @@
             bindings = <
             &none &kp ESC   &kp GRAVE &kp TAB   &none &kp RALT &kp RCTRL &kp RSHFT &kp RGUI &kp RALT
             &none &kp SQT   &kp MINUS &kp EQUAL &none &none    &none     &none     &none    &none
-            &none &kp ESC   &kp GRAVE &kp TAB   &none &none &none &none &none &none &none
+            &none &kp ESC   &kp GRAVE &kp TAB   &none &tog 6 &none &none &none &none &none
             >;
         };
 
@@ -170,7 +172,7 @@
             bindings = <
             &m1 &m2 &m3 &m4 &m5 &none &kp C_REWIND &kp C_PP &kp C_FF &none
             &none &kp C_BRI_DN &kp PSCRN &kp C_BRI_UP &none &none &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &none
-            &none &none &none &none &none &none &none &none &none &none &none
+            &none &none &none &none &none &tog 7 &none &none &none &none &none
             >;
         };
 
