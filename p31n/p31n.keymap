@@ -115,7 +115,7 @@
         default_layer {
             bindings = <
             &mt LALT Q   &mt LGUI W    &mt LSHFT E    &mt LCTRL R    &mt LALT T        &mt RALT Y     &mt RCTRL U    &mt RSHFT I     &mt RGUI O    &mt RALT P
-            &kp A        &kp S         &kp D          &kp F          &kp G             &kp H          &kp J         &kp K          &kp L        &kp SEMI
+            &mt LALT A   &mt LGUI S    &mt LSHFT D    &mt LCTRL F    &mt LALT G        &mt RALT H     &mt RCTRL J    &mt RSHFT K     &mt RGUI L    &mt RALT SEMI
             &lt 2 Z      &lt 7 X       &lt 1 C        &lt 5 V        &lt 2 B    &mo 8        &lt 3 N       &lt 6 M       &lt 4 COMMA     &lt 7 DOT    &lt 3 SLASH
             >;
         };
@@ -123,7 +123,7 @@
         fn1_layer {
             bindings = <
             &kp LALT     &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &kp KP_PLUS    &kp N7         &kp N8          &kp N9        &kp KP_ASTERISK
-            &none        &none         &none          &none          &none             &kp KP_MINUS   &kp N4         &kp N5          &kp N6        &kp KP_SLASH
+            &kp LALT     &kp LGUI      &kp LSHFT      &kp LCTRL      &kp LALT          &kp KP_MINUS   &kp N4         &kp N5          &kp N6        &kp KP_SLASH
             &none        &none         &none          &none          &none     &tog 1  &kp N0        &kp N1         &kp N2          &kp N3        &kp KP_DOT
             >;
         };
@@ -139,7 +139,7 @@
         fn3_layer {
             bindings = <
             &kp HOME     &none         &kp UP         &none          &kp PG_UP         &kp RALT       &kp RCTRL      &kp RSHFT       &kp RGUI      &kp RALT
-            &none        &kp LEFT      &none          &kp RIGHT      &none             &none          &none          &none           &none        &none
+            &none        &kp LEFT      &none          &kp RIGHT      &none             &kp RALT       &kp RCTRL      &kp RSHFT       &kp RGUI      &kp RALT
             &kp END      &none         &kp DOWN       &none          &kp PG_DN &tog 3  &none          &none          &none           &none         &none
             >;
         };
@@ -155,7 +155,7 @@
         fn5_layer {
             bindings = <
             &kp LALT &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &none &kp BSPC &kp ENTER &kp DEL &none
-            &none &none    &none     &none     &none    &none    &kp LBKT &kp RBKT &kp BSLH &none
+            &kp LALT &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &none &kp LBKT &kp RBKT &kp BSLH &none
             &none &none &none &none &none &tog 5 &none &kp BSPC &kp ENTER &kp DEL &none
             >;
         };
@@ -163,7 +163,7 @@
         fn6_layer {
             bindings = <
             &none &kp ESC   &kp GRAVE &kp TAB   &none &kp RALT &kp RCTRL &kp RSHFT &kp RGUI &kp RALT
-            &none &kp SQT   &kp MINUS &kp EQUAL &none &none    &none     &none     &none    &none
+            &none &kp SQT   &kp MINUS &kp EQUAL &none &kp RALT &kp RCTRL &kp RSHFT &kp RGUI &kp RALT
             &none &kp ESC   &kp GRAVE &kp TAB   &none &tog 6 &none &none &none &none &none
             >;
         };
