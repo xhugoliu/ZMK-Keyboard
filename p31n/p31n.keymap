@@ -147,8 +147,8 @@
         fn4_layer {
             bindings = <
             &kp F1       &kp F2        &kp F3         &kp F4         &kp F5            &kp RALT       &kp RCTRL      &kp RSHFT       &kp RGUI      &kp RALT
-            &kp F6       &kp F7        &kp F8         &kp F9         &kp F10           &kp F16        &kp F17        &kp F18         &kp F19       &kp F20
-            &kp F11      &kp F12       &kp F13        &kp F14        &kp F15   &tog 4  &kp F21        &kp F22        &none          &kp F23       &kp F24
+            &kp F6       &kp F7        &kp F8         &kp F9         &kp F10           &kp LG(F16)    &kp LG(F17)    &kp LG(F18)     &kp LG(F19)   &kp LG(F20)
+            &kp F11      &kp F12       &kp F13        &kp F14        &kp F15   &tog 4  &kp LG(F21)    &kp LG(F22)    &none          &kp LG(F23)   &kp LG(F24)
             >;
         };
 
